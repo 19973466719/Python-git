@@ -127,7 +127,7 @@ print(xiaoliu.sayHi('name',1))
 '''
 访问类的属性
 在类里面如果强制访问类的属性
-需要用_class_（注意左右两个下划线）
+需要用__class__（注意左右两个下划线）
 类方法：定义类的方法的时候，没有self参数
 
 '''
@@ -142,3 +142,42 @@ class Students():
         self.age=17
         print('i am {},I am {} years old'.format(self.name,self.age))
         return None
+
+
+class Student3():
+    name='dana'
+    age=18
+
+Student3.__dict__
+yueyue=Student3
+yueyue.__dict__
+print(yueyue.name)
+
+
+
+class A():
+    name='dana'
+    age=18
+b=A.__dict__
+print(b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

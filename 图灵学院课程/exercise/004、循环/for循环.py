@@ -42,9 +42,9 @@ for i in range(4):
     elif i==1 or i==2:
         for j in range(5):
             if j ==0 or j==4:
-                print('* ',end='')
+                print('* ')
             else:
-                print('  ',end='')
+                print('  ',end ='')
         print()#手动换行
 '''
 打印

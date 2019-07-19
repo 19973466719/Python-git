@@ -224,7 +224,7 @@ a[3][2]=100
 print(a)
 print(id(a))
 print(b)
-print(id(b))
+print(id(b),end=' ')
 #深拷贝 使用特定工具
 
 

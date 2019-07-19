@@ -16,7 +16,7 @@ a=A()
 print(A.__dict__)
 print(a.__dict__)
 
-a.name='youga'
+a.name = 'youga'
 a.age=19
 print(a.__dict__)
 print(a.name)
@@ -25,9 +25,9 @@ print(id(a.age))
 print(id(a.name))
 
 
-class Student():
-    #name,age是类的变量
-    #主义类的变量的定义位置与方法
+class Student ():
+    # name,age是类的变量
+    # 主义类的变量的定义位置与方法
     #不需要前缀
     name='北京图灵学院'
     age=18
@@ -63,7 +63,7 @@ Teacher.SayAgain()
 
 
 
-#关于self的案例
+# 关于self的案例
 class A():
     name='liuying'
     age=18

@@ -64,12 +64,15 @@ Teacher.SayAgain()
 
 
 # 关于self的案例
+
 class A():
     name='liuying'
     age=18
     def __init__(self):
         self.name='aaaa'
         self.age=200
+        print('I am TULING')
+
 
     def say(self):
         print(self.name)

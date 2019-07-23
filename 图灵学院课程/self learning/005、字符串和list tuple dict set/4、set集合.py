@@ -20,7 +20,7 @@ for i in sc:
     print(i)
 
 #集合另一种遍历
-sa={(1,2,3),(4,5,6),('i','love','wangxiaojing')}
+sa={(1,2,3),(4,5,6),('i','love','wang xiaojing')}
 for i,j,k in sa:
     print(i,j,k)
 

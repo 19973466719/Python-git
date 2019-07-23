@@ -32,7 +32,7 @@ for i in range(1,10):
 def jiujiu():
     for i in range(1, 10):
         for j in range(1, i + 1):
-            print(i * j, end='  ')
+            print("{}*{}={}" .format(i,j,i*j), end='  ')
         print()
     return None
 #重复打印

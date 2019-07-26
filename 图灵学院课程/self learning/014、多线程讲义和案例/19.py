@@ -1,4 +1,4 @@
-import multiprocessing
+import multiprocessing#多进程
 from time import sleep, ctime
 
 
@@ -13,7 +13,7 @@ if __name__ == '__main__':
     p = multiprocessing.Process(target = clock, args = (5,))
     p.start()
 
+
     while True:
         print('sleeping.......')
         sleep(1)
-

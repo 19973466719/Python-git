@@ -35,3 +35,4 @@ if __name__ == '__main__':
     producer(sequence, q)
     # 等待所有项被处理
     q.join()
+    print("Done....")

@@ -95,7 +95,7 @@ class Student(Person):
 class Tutor(Teacher,Student):
     pass
 t=Tutor()
-print(Tutor.__mro__)
+print(Tutor.__mro__)#
 print(t.__dict__)
 print(Tutor.__dict__)
 print("*"*20)

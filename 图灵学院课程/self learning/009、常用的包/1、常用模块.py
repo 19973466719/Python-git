@@ -70,6 +70,113 @@ print(m)
 #prcal:print calendar 直接打印日历
 print(calendar.prcal(2018))
 
+'''
+time 模块
+时间模块的属性
+timezone: 当前时区和UTC时间相差的秒数，在没有夏令时的情况下的间隔,东八区的是 -28800
+altzone : 获取当前时区与UTC时间相差的秒数，在有夏令时的情况下，
+daylight 测当前是否是夏令时时间状态, 0 表示是 
+'''
+import time
+print(time.timezone)
+print(time.altzone)
+print(time.daylight)
+
+
+
+'''
+当前时间的时间结构 localtime 
+可以通过点号操作符得到相应的属性元素的内容
+'''
+t = time.localtime()
+print(t)
+print(type(t))
+print(t.tm_hour)
+
+'''
+asctime()返回元组正常字符串化之后的时间格式
+返回值 字符串
+
+'''
+t = time.localtime()
+tt = time.asctime()
+print(tt)
+
+'''
+ctime:获取字符串化的当前时间
+
+'''
+t2 = time.ctime()
+print(t2)
+
+'''
+mktime()使用时间元组获取对应的时间戳
+格式：time.mktime()
+返回值：浮点型
+
+
+'''
+lt = time.localtime()
+ls = time.mktime(lt)
+ll = time.time()
+print(ls)
+print(ll)
+
+#clock： 获取cpu时间  3.3以后改用time.perf_counter
+
+print(time.perf_counter())
+
+# sleep:使程序进入睡眠，n秒后继续
+
+
+for i in range (10):
+    #time.sleep(1)
+    print(i)
+
+
+#strftime :将时间元组转化为自定义的字符串格式
+
+#t3 = time.localtime()
+
+#ft = time.strftime("%Y年%m月%d日 %H:%M", t3)
+#print(ft)
+help(time.strftime)
+
+
+'''
+datetime 模块
+datetime.date:一个理想的日期，提供year, month, day属性
+datetime.time:一个理想的时间，包含hour, minute, sec, microsec属性
+datetime.datetime:日期和时间
+datetime.timedate:时间长度
+
+
+
+'''
+import datetime
+
+dt = datetime.date(2018, 3 ,26)
+print(dt)
+print(dt.year)
+
+t4 = datetime.datetime(2019,7,23)
+print(t4)
+print(t4.today())
+print(t4.now())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

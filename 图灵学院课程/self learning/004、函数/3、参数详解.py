@@ -44,6 +44,7 @@ keys_para(one=1,two=2,three=3)
     收集参数可以和其他参数共存
     收集参数代码
     args看作一个list
+    args为整个函数的区域都有
 '''
 def stu(*args):
     print('hello,大家好，我的自我介绍如下')

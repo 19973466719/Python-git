@@ -22,7 +22,7 @@ class ClockProcess(multiprocessing.Process):
 if __name__ == '__main__':
     p = ClockProcess(3)
     p.start()
-
     while True:
         print('sleeping.......')
         sleep(1)
+

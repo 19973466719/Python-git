@@ -24,7 +24,7 @@ def func_1():
 
    print("func_1 done..........")
 
-
+#此时出现了死锁情况 两个不能同时进行
 def func_2():
    print("func_2 starting.........")
    lock_2.acquire()

@@ -34,16 +34,14 @@ def main():
     t2 = threading.Thread(target=loop2, args=("王大鹏", "王小鹏"))
     t2.start()
 
-    t1.join()
-    t2.join()
-
     print("All done at:", time.ctime())
 
 
 if __name__ == "__main__":
     main()
+    while True:
+        time.sleep(10)
     # 一定要有while语句
     # 因为启动多线程后本程序就作为主线程存在
     # 如果主线程执行完毕，则子线程可能也需要终止
-    while True:
-        time.sleep(10)
+
